@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>架构说明 · GitBook</title>
+        <title>目录结构 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="titles2.html" />
     
-    
-    <link rel="prev" href="../ce-shi-title.html" />
+    <link rel="prev" href="titles.html" />
     
 
     </head>
@@ -116,7 +114,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.2.1" data-path="titles.html">
+        <li class="chapter " data-level="1.2.1" data-path="titles.html">
             
                 <a href="titles.html">
             
@@ -129,7 +127,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="titles2.html">
+        <li class="chapter active" data-level="1.2.2" data-path="titles2.html">
             
                 <a href="titles2.html">
             
@@ -177,7 +175,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >架构说明</a>
+        <a href=".." >目录结构</a>
     </h1>
 </div>
 
@@ -192,16 +190,25 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h4 id="&#x67B6;&#x6784;&#x8BF4;&#x660E;">&#x67B6;&#x6784;&#x8BF4;&#x660E;</h4>
+                                <h4 id="nodeservice">Node.service</h4>
 <blockquote>
 <ul>
-<li>&#x6700;&#x4E0A;&#x7AEF;&#x662F;&#x670D;&#x52A1;&#x7AEF;&#xFF0C;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x5E38;&#x8BF4;&#x7684;&#x540E;&#x7AEF;&#x3002;&#x540E;&#x7AEF;&#x5BF9;&#x4E8E;&#x6211;&#x4EEC;&#x6765;&#x8BF4;&#xFF0C;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;&#x7684;&#x96C6;&#x5408;&#xFF0C;&#x670D;&#x52A1;&#x7AEF;&#x63D0;&#x4F9B;&#x5404;&#x79CD;&#x5404;&#x6837;&#x7684;&#x63A5;&#x53E3;&#x4F9B;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x3002;</li>
-<li>&#x670D;&#x52A1;&#x7AEF;&#x4E0B;&#x9762;&#x662F;Node&#x5E94;&#x7528;&#x3002;</li>
-<li>Node&#x5E94;&#x7528;&#x4E2D;&#x6709;&#x4E00;&#x5C42;Model Proxy&#x4E0E;&#x670D;&#x52A1;&#x7AEF;&#x8FDB;&#x884C;&#x901A;&#x8BAF;&#x3002;&#x8FD9;&#x4E00;&#x5C42;&#x4E3B;&#x8981;&#x76EE;&#x524D;&#x662F;&#x62B9;&#x5E73;&#x6211;&#x4EEC;&#x5BF9;&#x4E0D;&#x540C;&#x63A5;&#x53E3;&#x7684;&#x8C03;&#x7528;&#x65B9;&#x5F0F;&#xFF0C;&#x5C01;&#x88C5;&#x4E00;&#x4E9B;view&#x5C42;&#x9700;&#x8981;&#x7684;Model&#x3002;</li>
-<li>Node&#x5C42;&#x8FD8;&#x80FD;&#x8F7B;&#x677E;&#x5B9E;&#x73B0;&#x67D0;&#x4E9B;&#x9700;&#x4F9D;&#x8D56;&#x540E;&#x7AEF;&#x5F00;&#x53D1;&#x8BED;&#x8A00;&#x7684;&#x9700;&#x6C42;&#x3002;</li>
-<li>Node&#x6709;&#x54EA;&#x4E9B;&#x529F;&#x80FD;&#x5B8C;&#x5168;&#x7531;&#x5927;&#x5BB6;&#x81EA;&#x5DF1;&#x51B3;&#x5B9A;&#xFF0C;&#x5B8C;&#x5168;&#x6839;&#x636E;&#x4F60;&#x7684;&#x573A;&#x666F;&#x51B3;&#x5B9A;&#x3002;</li>
-<li>&#x6D4F;&#x89C8;&#x5668;&#x5C42;&#x5728;&#x6211;&#x4EEC;&#x8FD9;&#x4E2A;&#x67B6;&#x6784;&#x4E2D;&#x6CA1;&#x6709;&#x53D8;&#x5316;&#xFF0C;&#x4E5F;&#x4E0D;&#x5E0C;&#x671B;&#x56E0;&#x4E3A;&#x5F15;&#x5165;Node&#x6539;&#x53D8;&#x4F60;&#x4EE5;&#x524D;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x5F00;&#x53D1;&#x7684;&#x8BA4;&#x77E5;&#x3002;</li>
-<li>&#x5F15;&#x5165;Node&#xFF0C;&#x53EA;&#x662F;&#x628A;&#x672C;&#x8BE5;&#x5C31;&#x524D;&#x7AEF;&#x63A7;&#x5236;&#x7684;&#x90E8;&#x5206;&#x4EA4;&#x7531;&#x524D;&#x7AEF;&#x638C;&#x63A7;&#x3002;</li>
+<li>Nodejs&#xFF1A;V6.2</li>
+<li>&#x6838;&#x5FC3;&#x6846;&#x67B6;&#xFF1A;express+swig</li>
+<li>&#x53EF;&#x9009;&#x6A21;&#x5757;&#xFF1A;connect-history-api-fallback&#x4EE3;&#x7406;&#x8BBF;&#x95EE;</li>
+<li>&#x53EF;&#x9009;&#x6A21;&#x5757;&#xFF1A;express-session+redis+connect-redis</li>
+<li>&#x53EF;&#x9009;&#x6A21;&#x5757;&#xFF1A;raven.js</li>
+<li>&#x4EFB;&#x52A1;&#x5DE5;&#x5177;&#xFF1A;Gulp</li>
+<li>Api&#x6587;&#x6863;&#x7BA1;&#x7406;&#xFF1A;Lookapi</li>
+</ul>
+</blockquote>
+<h4 id="vuewebpackbabel">Vue+Webpack+Babel</h4>
+<blockquote>
+<ul>
+<li>Vue&#xFF1A;V2.3.4</li>
+<li>&#x4EE3;&#x7801;&#x68C0;&#x67E5;&#xFF1A;Eslint</li>
+<li>&#x89E6;&#x624B;&#x67B6;&#xFF1A;vue.cli</li>
+<li>&#x7F16;&#x8BD1;&#x6253;&#x5305;&#xFF1A;ES6+JSX+Babel+Webpack</li>
 </ul>
 </blockquote>
 
@@ -231,14 +238,10 @@
 
             
                 
-                <a href="../ce-shi-title.html" class="navigation navigation-prev " aria-label="Previous page: 使用说明">
+                <a href="titles.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 架构说明">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="titles2.html" class="navigation navigation-next " aria-label="Next page: 目录结构">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -247,7 +250,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"架构说明","level":"1.2.1","depth":2,"next":{"title":"目录结构","level":"1.2.2","depth":2,"path":"ce-shi-title/titles2.md","ref":"ce-shi-title/titles2.md","articles":[]},"previous":{"title":"使用说明","level":"1.2","depth":1,"path":"ce-shi-title.md","ref":"ce-shi-title.md","articles":[{"title":"架构说明","level":"1.2.1","depth":2,"path":"ce-shi-title/titles.md","ref":"ce-shi-title/titles.md","articles":[]},{"title":"目录结构","level":"1.2.2","depth":2,"path":"ce-shi-title/titles2.md","ref":"ce-shi-title/titles2.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ce-shi-title/titles.md","mtime":"2018-02-23T07:01:41.191Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-23T07:15:39.030Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"目录结构","level":"1.2.2","depth":2,"previous":{"title":"架构说明","level":"1.2.1","depth":2,"path":"ce-shi-title/titles.md","ref":"ce-shi-title/titles.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ce-shi-title/titles2.md","mtime":"2018-02-23T07:01:41.192Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-23T07:15:39.030Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
